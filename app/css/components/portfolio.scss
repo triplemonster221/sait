@@ -1,0 +1,97 @@
+.portfolio {
+    padding-top: 200px;
+    background: rgb(247, 247, 247);
+
+    .portfolio-inner {
+        display: flex;  
+        justify-content: space-between;
+        flex-wrap: wrap;     
+    }
+
+    .portfolio-top,
+    .portfolio-bottom {
+        width: 45%;
+        flex-shrink: 0;
+    }
+
+    .portfolio-item-title {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+     
+    .portfolio-top__text {
+        margin-bottom: 20px;
+    }
+
+    .portfolio-top__list {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .portfolio-top__item  {
+        position: relative;
+        margin-bottom: 10px;
+        padding-left: 25px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+            background-image: url(../../img/portfolio/ok.svg);
+            left: 0;
+            top: 0;
+        }
+    }
+
+    .portfolio-bottom__list  {
+        margin-bottom: 40px;
+        position: relative;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .swiper-arrows {
+        position: absolute;
+        width: 120px;
+        top: 15px;
+        right: 0;
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid $orange-color;
+            transition: all .3s;
+            padding-top: 4px;
+            &::after {
+                font-size: 25px;
+                color: $orange-color;
+
+                
+            }
+
+            &:hover {
+               background-color: $orange-color; 
+            }
+
+            &:hover::after{
+                color: #fff;
+             }
+        }
+    }
+        
+        
+}

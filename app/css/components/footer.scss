@@ -1,0 +1,68 @@
+.footer {
+    padding: 50px 0;
+    background: #f9f9f9;
+
+    .footer-inner {
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 150px;
+        height: 60px;
+        margin: 0 auto 40px;
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+    .footer-logo__phone {
+        display: block;
+        font-size: 32px;
+        transition: color .2s;
+        margin-bottom: 30px;
+
+        &:hover {
+            color: $orange-color;
+        }
+    }
+
+    .footer-logo__mail {
+        display: block;
+        font-size: 24px;
+        transition: color .2s;
+        margin-bottom: 30px;
+
+        &:hover {
+            color: $orange-color;
+        }
+    }
+
+    .footer-social {
+        a {
+            width: 30px;
+            height: 30px;
+            display: block;
+            margin: 0 auto 20px;
+
+            
+
+            svg {
+                transition: all .2s;
+
+                &:hover {
+                    fill: $green-color;
+                }
+            }
+        }
+    }
+
+    .footer-policy {
+        text-decoration: underline;
+        transition: color .2s;
+
+        &:hover {
+            color: $orange-color;
+        }
+    }
+}
